@@ -1,24 +1,51 @@
 # Chatty
 
-## Project Overview
-Chatty is a versatile messaging application designed to facilitate seamless communication between users. It supports real-time messaging, file sharing, and customizable settings for user preferences. Whether you want to have a casual chat with friends or collaborate with colleagues, Chatty has got you covered.
-
-## Features
-- **Real-time Messaging**: Exchange messages instantly with friends and colleagues.
-- **File Sharing**: Share images, documents, and more with ease.
-- **Multiplayer Support**: Create groups for chats and discussions.
-- **Customizable Profiles**: Users can set their own display names, profile pictures, and statuses.
-- **Notifications**: Stay updated with push notifications for new messages and activities.
+Chatty is a real-time text and image sharing application that allows users to communicate efficiently through sharing content instantly.
 
 ## Installation Instructions
-1. **Clone the Repository**:  Run `git clone https://github.com/susa001/Chatty.git` to clone the repo to your local machine.
-2. **Install Dependencies**: Navigate to the project directory and run `npm install` to install required dependencies.
-3. **Start the Application**: Execute `npm start` to run the application locally.
 
-## Usage Examples
-- To start chatting with a friend, click on their name in the contacts list and begin typing your messages.
-- You can share files by clicking on the attach button in the chat window.
-- Create a new group chat by selecting multiple contacts in the group creation interface.
+To set up the Chatty application on your local machine, follow these comprehensive steps:
+
+### Prerequisites
+- **Node.js**: Ensure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
+- **Git**: Make sure Git is installed on your machine. You can download it from [git-scm.com](https://git-scm.com/).
+- **Database**: You will need MongoDB installed for storing user data and shared content.
+
+### Steps to Install
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/susa001/Chatty.git
+   cd Chatty
+   ```
+
+2. **Install Dependencies**
+   Inside the project directory, run:
+   ```bash
+   npm install
+   ```
+
+3. **Set Up the Environment Variables**
+   Create a `.env` file in the root project directory and include the following:
+   ```env
+   PORT=3000
+   DB_URI=mongodb://localhost:27017/chatty
+   ```
+   Ensure you adjust the `DB_URI` if your MongoDB instance is configured differently.
+
+4. **Run the Application**
+   Start the server with:
+   ```bash
+   npm start
+   ```
+   The application should be running at `http://localhost:3000`.
+
+5. **Access the Application**
+   Open your browser and navigate to the URL mentioned above. You can start sharing messages and images instantly!
+
+## Contributing
+
+We welcome contributions! Please fork the repository and submit a pull request for your suggested changes.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License. See the LICENSE file for details.
